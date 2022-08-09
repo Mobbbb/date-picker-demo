@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>Account</title>
+
+		<link rel="stylesheet" href="./src/style/index.css">
+		<link rel="stylesheet" href="./src/libs/element-plus@2.2.12.css">
+
+		<script type="text/javascript" src="./src/libs/vue.global.v3.2.36.js"></script>
+		<script type="text/javascript" src="./src/libs/element-plus@2.2.12.js"></script>
+		<script type="text/javascript" src="./src/libs/zh-cn.js"></script>
+  	</head>
+  	<body>
+		<div class="appWrap">
+			<div id="app">
+				<div>	
+					<el-date-picker
+						:editable="false"
+						:clearable="false"
+						:shortcuts="shortcuts"
+						v-model="dateRange"
+						type="monthrange"
+						range-separator="To"
+						start-placeholder="Start"
+						end-placeholder="End"
+						class="date-picker"
+						popper-class="date-picker-popper" />
+				</div>
+			</div>
+		</div>
+  	</body>
+</html>
+<script src="./src/config/options.js"></script>
+<script src="./src/main.js"></script>

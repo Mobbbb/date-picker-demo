@@ -1,0 +1,87 @@
+html, body {
+    width: 100%;
+}
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.appWrap {
+    width: 100%;
+}
+
+#app {
+    display: flex;
+    margin: 12px;
+    justify-content: center;
+}
+
+.chart-wrap {
+    margin: 0 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+.chart {
+    height: 500px;
+    width: 100%;
+}
+
+.date-picker.el-date-editor.el-input__wrapper {
+    width: 200px;
+}
+.date-picker-popper .el-date-range-picker{
+    width: 416px;
+}
+.date-picker-popper .el-date-range-picker.has-sidebar{
+    width: 416px;
+}
+@media screen and (max-width: 544px) {
+    .date-picker.el-date-editor.el-input__wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .date-picker-popper {
+        right: 5px;
+    }
+    .date-picker-popper .el-date-range-picker {
+        width: 100%;
+    }
+}
+.date-picker-popper .el-picker-panel__sidebar {
+    width: 63px;
+}
+.date-picker-popper .el-picker-panel__shortcut {
+    padding: 0 8px;
+}
+.date-picker-popper .el-date-range-picker .el-picker-panel__body {
+    min-width: unset;
+}
+.date-picker-popper .el-picker-panel__sidebar+.el-picker-panel__body {
+    margin-left: 63px;
+}
+.date-picker-popper .el-date-range-picker__content {
+    padding: 8px;
+}
+.date-picker-popper .el-month-table td div {
+    height: 30px;
+    padding: 0;
+}
+.date-picker-popper .el-month-table td .cell {
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+}
+.date-picker-popper .el-month-table td.in-range:first-of-type div {
+    border-radius: 10px 0 0 10px;
+}
+.date-picker-popper .el-month-table td.in-range:last-of-type div {
+    border-radius: 0 10px 10px 0;
+}
+.date-picker-popper .el-month-table td.start-date:first-of-type div {
+    border-radius: 24px 0 0 24px;
+}
+.date-picker-popper .el-month-table td.end-date:last-of-type div {
+    border-radius: 0 24px 24px 0;
+}
