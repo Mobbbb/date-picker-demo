@@ -12567,8 +12567,7 @@
       const prevFocusedElement = document.activeElement;
       element.focus({ preventScroll: true });
       if (element !== prevFocusedElement && isSelectable(element) && shouldSelect) {
-        // 全选
-        // element.select();
+        element.select();
       }
     }
   };
